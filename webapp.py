@@ -55,7 +55,7 @@ prediction = regression.predict(df)
 y_pred = regression.predict(X_test)
 
 st.header('Prediction of ph')
-st.write(prediction)
+st.write(prediction / - 5)
 st.write('---')
 
 st.header('Mean Squared Error:')
