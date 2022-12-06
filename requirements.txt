@@ -1,7 +1,4 @@
 streamlit
 pandas
 matplotlib
-sklearn
-sklearn.model_selection
-sklearn.metrics
-sklearn.linear_model
+sklearn>=1.1.3
