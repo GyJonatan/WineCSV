@@ -10,7 +10,7 @@ st.write("""
 """)
 st.write('---')
 
-dataset = pd.read_csv('https://raw.githubusercontent.com/benceb1/csv_and_others/master/winequality-red.csv')
+dataset = pd.read_csv('winequality-red.csv')
 X = dataset.drop('pH', axis=1)
 Y = dataset['pH']
 
@@ -55,7 +55,7 @@ prediction = regression.predict(df)
 y_pred = regression.predict(X_test)
 
 st.header('Prediction of ph')
-st.write(prediction / - 5)
+st.write(prediction)
 st.write('---')
 
 st.header('Mean Squared Error:')
